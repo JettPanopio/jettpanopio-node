@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <TabContainer>
+
+    </TabContainer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import TabContainer from './components/TabContainer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TabContainer
   }
 }
 </script>
 
 <style>
+* {
+  padding: 0;
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>

@@ -1,0 +1,8 @@
+[
+  {
+    "srcDir": "src",
+    "destDir": "dist",
+    "files": "**/*.vue",
+    "command": "npm run dev"
+  }
+]
