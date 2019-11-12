@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <TabContainer>
-
-    </TabContainer>
+    <Truth/>
+    <TabContainer/>
   </div>
 </template>
 

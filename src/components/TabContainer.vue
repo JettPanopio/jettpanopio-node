@@ -1,9 +1,6 @@
 <template>
   <div class="tab-container">
-    <p>{{msg}}</p>
-    <Tab  v-for="tab in tabs" :key="tab.id" >
-      
-    </Tab>
+    <Tab  v-for="tab in tabs" :key="tab.id" :title="tab.title" ></Tab>
   </div>
 </template>
 
@@ -17,11 +14,11 @@ export default {
   },
   data () {
     return {
-      msg: 'This is tab-container',
+      title: 'title',
       tabs: [
-        { title: 'Saved Tab' },
-        { title: 'Stops Tab' },
-        { title: 'Search Tab' }
+        { title: 'Saved' },
+        { title: 'Stops' },
+        { title: 'Search' }
       ]
     }
   }
@@ -30,5 +27,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.tab-container { display: flex; }
 </style>
